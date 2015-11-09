@@ -34,5 +34,5 @@ function r_${1:customThemeName}_${2:metabox_id}() {
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>cmb2-AddMetabox</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.php, source.md</scope>
+	<scope>source.php, text.html.markdown</scope>
 </snippet>

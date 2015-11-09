@@ -43,5 +43,5 @@ function $1_$2_post_type() {
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>newPostType</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.php, source.md</scope>
+	<scope>source.php, text.html.markdown</scope>
 </snippet>
