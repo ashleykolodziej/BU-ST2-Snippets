@@ -1,4 +1,4 @@
-# BU-ST2-Snippets
+# Sublime Text 2 Snippets
 A collection of snippets for Sublime Text 2 to speed up development for cmb2, Wordpress, and SASS. Among the goodies:
 
 * Some standard CSS nonsense
@@ -7,7 +7,7 @@ A collection of snippets for Sublime Text 2 to speed up development for cmb2, Wo
 
 ## To install:
 
-Clone this repository as usual, but instead of cloning to your normal development folder, clone to the Sublime Text 2 Packages folder:
+Clone or download/unzip these files to your Sublime Text 2 Packages folder:
 
 **Mac users:** `/Users/YOURUSERNAME/Library/Application Support/Sublime Text 2/Packages`
 
