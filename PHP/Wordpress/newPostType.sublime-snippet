@@ -5,9 +5,9 @@
  ${2:postTypeName} Post Type
 - - - - - - - - - - - - - - - - - */
 
-add_action( 'init', 'r_${1:customThemeName}_${2:postTypeName}_post_type' );
+add_action( 'init', '${1:customThemeName}_${2:postTypeName}_post_type' );
 
-function r_$1_$2_post_type() {
+function $1_$2_post_type() {
 
 	\$labels = array(
 		'name' => '$2s',

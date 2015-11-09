@@ -15,9 +15,9 @@
 
 - - - - - - - - - - - - - - - - - */
 
-add_action( 'init', 'r_${1:customThemeName}_register_sidebars' );
+add_action( 'init', '${1:customThemeName}_register_sidebars' );
 
-function r_${1:customThemeName}_register_sidebars() {
+function ${1:customThemeName}_register_sidebars() {
 	if ( function_exists( 'register_sidebar' ) ) {
 		register_sidebar( array(
 			'name' => '${2:Custom} Sidebar',

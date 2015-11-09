@@ -78,7 +78,6 @@ Only the most commonly used cmb2 fields have snippets written here - cmb2 does s
 
 #### Wordpress
 
-* `adminCSS`: Skeleton function to add a custom CSS stylesheet to the Wordpress admin.
 * `newPostType`: Skeleton function to add a custom post type to Wordpress.
 * `newShortcode`: Skeleton function to add a new shortcode to Wordpress.
 * `newSidebar`: Skeleton function to add a new sidebar to Wordpress.

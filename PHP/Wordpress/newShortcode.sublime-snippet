@@ -4,9 +4,9 @@
  ${2:shortcodeName} Shortcode
 - - - - - - - - - - - - - - - - - */
 
-add_shortcode( '$2', 'r_$1_shortcode_$2' );
+add_shortcode( '$2', '$1_shortcode_$2' );
 
-function r_${1:customThemeName}_shortcode_$2( \$atts, \$content = "" ) {
+function ${1:customThemeName}_shortcode_$2( \$atts, \$content = "" ) {
 	\$atts = shortcode_atts( array(
 		'${3:attName}' => 'defaultValue',
 	), \$atts );
