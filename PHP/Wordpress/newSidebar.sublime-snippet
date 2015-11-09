@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+/* - - - - - - - - - - - - - - - - -
+ Register Sidebars
+
+ Don't forget to add a sidebar-sidebarName.php template
+ for each sidebar you include here. Use this snippet to start
+ that template:
+
+ <?php if ( is_active_sidebar( "$2-sidebar" ) ): ?>
+	<aside id="$2-sidebar" class="sidebar">
+		<?php dynamic_sidebar( "$2-sidebar" ); ?>
+	</aside>
+<?php endif; ?>
+
+- - - - - - - - - - - - - - - - - */
+
+add_action( 'init', 'r_${1:customThemeName}_register_sidebars' );
+
+function r_${1:customThemeName}_register_sidebars() {
+	if ( function_exists( 'register_sidebar' ) ) {
+		register_sidebar( array(
+			'name' => '${2:Custom} Sidebar',
+			'id' => '$2-sidebar',
+			'description' => 'Add widgets here to appear in your $2 sidebar.',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>',
+		) );
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newSidebar</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.md</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+/* - - - - - - - - - - - - - - - - -
+ ${2:shortcodeName} Shortcode
+- - - - - - - - - - - - - - - - - */
+
+add_shortcode( '$2', 'r_$1_shortcode_$2' );
+
+function r_${1:customThemeName}_shortcode_$2( \$atts, \$content = "" ) {
+	\$atts = shortcode_atts( array(
+		'${3:attName}' => 'defaultValue',
+	), \$atts );
+
+	if ( $atts[ '$3' ] ) {
+		\$classes = \$atts[ '$3' ];
+		\$html = "<div class='\$classes'>\$content</div>";
+	}
+
+	return \$html;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newShortcode</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.md</scope>
+</snippet>

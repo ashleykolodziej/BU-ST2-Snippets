@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+	&:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: ${1:5px} solid transparent;
+		border-right: $1 solid transparent;
+		border-top: $1 solid ${2:#000};
+	}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>arrowDown</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css, source.scss, source.sass, source.md</scope>
+</snippet>

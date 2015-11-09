@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+	// Replace \$boxVariable with your variable name in the new_cmb2_box above.
+
+	\$boxVariable->add_field( array(
+		'name' => 'Time or Date Field',
+		'id'   => \$prefix . 'text_time',
+		'type' => 'text_time',
+		// 'time_format' => 'h:i:s A', // See php.net/manual/en/function.date.php
+	) );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cmb2-AddField-timeDate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.md</scope>
+</snippet>

@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+/* - - - - - - - - - - - - - - - - -
+ Add cmb2 metabox
+
+ Adds a new metabox via cmb2 plugin.
+- - - - - - - - - - - - - - - - - */
+
+add_action( 'cmb2_admin_init', 'r_$1_$2' );
+
+function r_${1:customThemeName}_${2:metabox_id}() {
+
+	\$prefix = '_yourPrefixHere_';
+
+	\$$2 = new_cmb2_box( array(
+		'id'            => '$2',
+		'title'         => __( 'Metabox Title', '' ),
+		'object_types'  => array( 'page', ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		//'show_on' => array( // Choose templates to show on
+		//	'key' => 'page-template',
+		//	'value' => 'page-templates/front-page.php'
+		//	),*/
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Use cmb2AddField snippets below.
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cmb2-AddMetabox</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.md</scope>
+</snippet>

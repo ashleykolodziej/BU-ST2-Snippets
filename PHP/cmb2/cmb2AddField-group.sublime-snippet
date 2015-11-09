@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+	// Replace \$boxVariable with your variable name in the new_cmb2_box above.
+	// Replace \$yourGroupFieldID with a descriptive variable name.
+
+	\$yourGroupFieldID = \$boxVariable->add_field( array(
+		'id'          => \$prefix . 'group',,
+		'type'        => 'group',
+		'options'     => array(
+			'group_title'   => __( 'Entry {#}', '' ), // since version 1.1.4, {#} gets replaced by row number
+			'add_button'    => __( 'Add Another Entry', '' ),
+			'remove_button' => __( 'Remove Entry', '' ),
+			//'sortable'      => true, // beta
+			// 'closed'     => true, // true to have the groups closed by default
+			),
+	) );
+
+	// Example field, use any type here.
+
+	$boxVariable->add_group_field( $yourGroupFieldID, array(
+		'name' => 'Entry Title',
+		'id'   => 'title',
+		'type' => 'text',
+	) );
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cmb2-AddField-group</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.md</scope>
+</snippet>

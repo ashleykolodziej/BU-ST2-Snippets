@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+	// Replace \$boxVariable with your variable name in the new_cmb2_box above.
+
+	\$boxVariable->add_field( array(
+		'name' => 'Link Picker Field',
+		'desc' => 'Use this to describe how this field is used. Lets you pick any link from Wordpress or add your own.',
+		'id'   => \$prefix . 'linkpicker',
+		'type' => 'linkpicker',
+	) );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cmb2-AddField-linkpicker</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.md</scope>
+</snippet>

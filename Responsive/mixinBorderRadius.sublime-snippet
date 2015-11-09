@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+@include border-radius(${1:5px});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>borderRadius</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css, source.scss, source.sass, source.md</scope>
+</snippet>
