@@ -2,6 +2,8 @@
 	<content><![CDATA[
 /* - - - - - - - - - - - - - - - - -
  ${2:shortcodeName} Shortcode
+
+ Please provide a general description of your shortcode and link to docs here.
 - - - - - - - - - - - - - - - - - */
 
 add_shortcode( '$2', '$1_shortcode_$2' );

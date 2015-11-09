@@ -13,6 +13,7 @@
 	</aside>
 <?php endif; ?>
 
+Please provide a general description of the sidebar purpose, where it will show up, and link to docs here.
 - - - - - - - - - - - - - - - - - */
 
 add_action( 'init', '${1:customThemeName}_register_sidebars' );
